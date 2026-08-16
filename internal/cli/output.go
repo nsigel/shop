@@ -6,7 +6,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/saucesteals/shop"
+	"github.com/nsigel/deslop"
 )
 
 // isTTY reports whether the given file is a terminal.

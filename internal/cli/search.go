@@ -3,7 +3,8 @@ package cli
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/saucesteals/shop"
+	"github.com/nsigel/deslop"
+	"github.com/nsigel/deslop/deslop"
 )
 
 func (c *CLI) newSearchCmd() *cobra.Command {
@@ -16,6 +17,7 @@ func (c *CLI) newSearchCmd() *cobra.Command {
 		minRating float64
 		category  string
 		filters   []string
+		deslopOn  bool
 	)
 
 	cmd := &cobra.Command{
@@ -56,6 +58,14 @@ func (c *CLI) newSearchCmd() *cobra.Command {
 				return err
 			}
 
+			if deslopOn {
+				filtered, err := deslop.FilterSearch(ctx, s, result, deslop.DefaultOptions())
+				if err != nil {
+					return err
+				}
+				result = filtered.Result
+			}
+
 			return c.outputJSON(result)
 		},
 	}
@@ -69,6 +79,7 @@ func (c *CLI) newSearchCmd() *cobra.Command {
 	f.Float64Var(&minRating, "min-rating", 0, "minimum average rating")
 	f.StringVar(&category, "category", "", "category filter (provider-specific)")
 	f.StringArrayVar(&filters, "filter", nil, "arbitrary filter key=value (repeatable)")
+	f.BoolVar(&deslopOn, "deslop", false, "filter pseudo-brand junk using deslop verdicts from full product details")
 
 	return cmd
 }

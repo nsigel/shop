@@ -7,7 +7,7 @@ import (
 	"net/url"
 	"strconv"
 
-	"github.com/saucesteals/shop"
+	"github.com/nsigel/deslop"
 )
 
 // Reviews fetches customer reviews for a product.

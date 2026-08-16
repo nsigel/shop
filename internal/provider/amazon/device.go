@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/saucesteals/shop"
+	"github.com/nsigel/deslop"
 )
 
 // bearerExpiryFromResponse converts Amazon's expires_in field (which may be
@@ -35,14 +35,14 @@ const (
 
 // Device registration constants — iOS (Amazon Shopping app).
 const (
-	defaultDeviceType    = "A3NWHXTQ4EBCZS"
-	defaultDeviceDomain  = "Device"
-	defaultAppName       = "Amazon Shopping"
-	defaultAppVersion    = "24.20.2"
-	defaultDeviceModel   = "iPhone"
-	defaultOSVersion     = "17.6.1"
-	defaultSoftwareVer   = "1"
-	serialBytes          = 12
+	defaultDeviceType   = "A3NWHXTQ4EBCZS"
+	defaultDeviceDomain = "Device"
+	defaultAppName      = "Amazon Shopping"
+	defaultAppVersion   = "24.20.2"
+	defaultDeviceModel  = "iPhone"
+	defaultOSVersion    = "17.6.1"
+	defaultSoftwareVer  = "1"
+	serialBytes         = 12
 )
 
 // HTTP constants.
@@ -105,7 +105,7 @@ type registerPayload struct {
 // registerAuthData carries the authentication method and code pair for
 // device registration.
 type registerAuthData struct {
-	UseGlobalAuthentication string          `json:"use_global_authentication"`
+	UseGlobalAuthentication string           `json:"use_global_authentication"`
 	CodePair                registerCodePair `json:"code_pair"`
 }
 

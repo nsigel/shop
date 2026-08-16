@@ -56,7 +56,7 @@ Every command outputs structured JSON. Same interface regardless of store. Pipe 
 ### Install
 
 ```bash
-go install github.com/saucesteals/shop/cmd/shop@latest
+go install github.com/nsigel/deslop/cmd/shop@latest
 ```
 
 ### Authenticate
@@ -185,6 +185,7 @@ shop search "protein powder"
 shop search "headphones" --sort price_low --min-price 2000 --max-price 15000
 shop search "laptop" --min-rating 4.0 --category Electronics
 shop search "keyboard" --filter brand=Keychron --page 2
+shop search "socket set" --deslop
 ```
 
 > **Prices are in cents** (minor units). `--min-price 2000` = $20.00.
@@ -200,6 +201,7 @@ shop search "keyboard" --filter brand=Keychron --page 2
 - `--min-rating` — Minimum average rating (e.g. `4.0`)
 - `--category` — Category filter (provider-specific)
 - `--filter` — Arbitrary `key=value` filter (repeatable)
+- `--deslop` — Fetch full product details and filter pseudo-brand junk before returning results
 
 </details>
 
@@ -231,6 +233,7 @@ shop search "keyboard" --filter brand=Keychron --page 2
 
 ```bash
 shop product B0D1XD1ZV3
+shop product B0D1XD1ZV3 --deslop
 ```
 
 Returns the full product record: title, brand, price, list price, images, specs, features, description, seller info, availability, and variant metadata. Product IDs are Amazon ASINs (10-character alphanumeric).
@@ -463,7 +466,7 @@ func init() {
 }
 
 // cmd/shop/main.go
-import _ "github.com/saucesteals/shop/internal/provider/amazon"
+import _ "github.com/nsigel/deslop/internal/provider/amazon"
 ```
 
 ### Adding a New Provider

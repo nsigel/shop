@@ -8,9 +8,9 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/saucesteals/shop"
-	"github.com/saucesteals/shop/internal/app"
-	"github.com/saucesteals/shop/internal/config"
+	"github.com/nsigel/deslop"
+	"github.com/nsigel/deslop/internal/app"
+	"github.com/nsigel/deslop/internal/config"
 )
 
 // Version is set at build time via ldflags. Defaults to "dev" for

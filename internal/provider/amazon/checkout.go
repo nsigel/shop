@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/saucesteals/shop"
+	"github.com/nsigel/deslop"
 )
 
 // parseAddressLine parses "City, State, PostalCode" into the address fields.

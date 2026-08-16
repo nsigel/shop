@@ -8,8 +8,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/saucesteals/shop"
-	"github.com/saucesteals/shop/internal/config"
+	"github.com/nsigel/deslop"
+	"github.com/nsigel/deslop/internal/config"
 )
 
 // App is the central coordinator. It holds configuration, the store registry,

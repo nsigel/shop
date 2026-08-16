@@ -7,7 +7,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/saucesteals/shop"
+	"github.com/nsigel/deslop"
 )
 
 const registryFile = "registry.json"

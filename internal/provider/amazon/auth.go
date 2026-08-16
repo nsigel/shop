@@ -8,8 +8,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/saucesteals/shop"
-	"github.com/saucesteals/shop/internal/config"
+	"github.com/nsigel/deslop"
+	"github.com/nsigel/deslop/internal/config"
 )
 
 const (
@@ -36,10 +36,10 @@ type authState struct {
 	CustomerID        string       `json:"customerId,omitempty"`
 	Cookies           []authCookie `json:"cookies,omitempty"`
 	CookiesExpiry     string       `json:"cookiesExpiry,omitempty"`
-	RefreshToken      string   `json:"refreshToken,omitempty"`
-	BearerToken       string   `json:"bearerToken,omitempty"`
-	BearerTokenExpiry string   `json:"bearerTokenExpiry,omitempty"`
-	AuthenticatedAt   string   `json:"authenticatedAt,omitempty"`
+	RefreshToken      string       `json:"refreshToken,omitempty"`
+	BearerToken       string       `json:"bearerToken,omitempty"`
+	BearerTokenExpiry string       `json:"bearerTokenExpiry,omitempty"`
+	AuthenticatedAt   string       `json:"authenticatedAt,omitempty"`
 }
 
 // authCookie is the JSON-serialized form of a single Amazon session cookie.

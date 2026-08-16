@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/saucesteals/shop"
+	"github.com/nsigel/deslop"
 )
 
 // priceRe matches price strings with common currency symbols ($, £, €, ¥).

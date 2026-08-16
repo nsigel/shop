@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/saucesteals/shop"
+	"github.com/nsigel/deslop"
 )
 
 func init() {
