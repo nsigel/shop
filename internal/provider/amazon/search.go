@@ -11,7 +11,7 @@ import (
 
 	"golang.org/x/net/html"
 
-	"github.com/nsigel/deslop"
+	"github.com/saucesteals/shop"
 )
 
 // mapSearchSort maps shop.SearchSort values to Amazon's URL sort parameter.

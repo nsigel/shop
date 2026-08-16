@@ -56,7 +56,7 @@ Every command outputs structured JSON. Same interface regardless of store. Pipe 
 ### Install
 
 ```bash
-go install github.com/nsigel/deslop/cmd/shop@latest
+go install github.com/saucesteals/shop/cmd/shop@latest
 ```
 
 ### Authenticate
@@ -466,7 +466,7 @@ func init() {
 }
 
 // cmd/shop/main.go
-import _ "github.com/nsigel/deslop/internal/provider/amazon"
+import _ "github.com/saucesteals/shop/internal/provider/amazon"
 ```
 
 ### Adding a New Provider

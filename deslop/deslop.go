@@ -8,7 +8,7 @@ import (
 	"strings"
 	"unicode"
 
-	"github.com/nsigel/deslop"
+	"github.com/saucesteals/shop"
 	"golang.org/x/text/unicode/norm"
 )
 

@@ -11,7 +11,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/nsigel/deslop"
+	"github.com/saucesteals/shop"
 )
 
 // bearerExpiryFromResponse converts Amazon's expires_in field (which may be

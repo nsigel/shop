@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"time"
 
-	"github.com/nsigel/deslop"
-	"github.com/nsigel/deslop/internal/config"
+	"github.com/saucesteals/shop"
+	"github.com/saucesteals/shop/internal/config"
 )
 
 const (

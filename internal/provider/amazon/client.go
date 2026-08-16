@@ -13,7 +13,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/nsigel/deslop"
+	"github.com/saucesteals/shop"
 )
 
 // asinPattern validates that a product ID is a well-formed 10-character

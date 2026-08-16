@@ -3,7 +3,7 @@ package cli
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/nsigel/deslop"
+	"github.com/saucesteals/shop"
 )
 
 func (c *CLI) newReviewsCmd() *cobra.Command {

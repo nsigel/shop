@@ -8,7 +8,7 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/nsigel/deslop"
+	"github.com/saucesteals/shop"
 )
 
 // Product fetches full details for an ASIN from the TVSS API.

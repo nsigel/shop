@@ -3,7 +3,7 @@ package cli
 import (
 	"github.com/spf13/cobra"
 
-	"github.com/nsigel/deslop/deslop"
+	"github.com/saucesteals/shop/deslop"
 )
 
 func (c *CLI) newProductCmd() *cobra.Command {

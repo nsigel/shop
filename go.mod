@@ -1,4 +1,4 @@
-module github.com/nsigel/deslop
+module github.com/saucesteals/shop
 
 go 1.25.0
 

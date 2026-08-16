@@ -3,7 +3,7 @@ package amazon
 import (
 	"context"
 
-	"github.com/nsigel/deslop"
+	"github.com/saucesteals/shop"
 )
 
 // cartImpl implements shop.Cart for Amazon using the TVSS cart API.

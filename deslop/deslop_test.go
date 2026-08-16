@@ -3,7 +3,7 @@ package deslop
 import (
 	"testing"
 
-	"github.com/nsigel/deslop"
+	"github.com/saucesteals/shop"
 )
 
 func TestEvaluateProductKnownBrand(t *testing.T) {
