@@ -57,9 +57,9 @@ shop search "usb-c cable" --sort price_low --page 2
 shop search "headphones" --min-price 2000 --max-price 10000 --min-rating 4.0
 ```
 
-If the user asks to avoid knockoffs, pseudo-brands, junk brands, or wants "real brands only," infer `--deslop` even if they do not name the flag.
+If the user asks to avoid knockoffs, fake/junk brands, or wants "real brands only," infer `--deslop` even if they do not name the flag. `deslop` means filtering out fake-looking junk-brand Amazon listings so the results skew toward real, established brands.
 
-Flags: `--sort` (relevance|price_low|price_high|rating|newest|best_seller), `--page`, `--page-size`, `--min-price`, `--max-price` (cents), `--min-rating`, `--category`, `--filter key=value` (repeatable), `--deslop` (fetch full product details and filter pseudo-brand junk before presenting results)
+Flags: `--sort` (relevance|price_low|price_high|rating|newest|best_seller), `--page`, `--page-size`, `--min-price`, `--max-price` (cents), `--min-rating`, `--category`, `--filter key=value` (repeatable), `--deslop` (fetch full product details and filter out fake/junk-brand listings before presenting results)
 
 Response: `.products[]` has id, title, price, rating, url, badge, availability. `.hasMore` for pagination.
 

@@ -36,7 +36,7 @@ func (c *CLI) newProductCmd() *cobra.Command {
 		},
 	}
 
-	cmd.Flags().BoolVar(&deslopOn, "deslop", false, "annotate the product with deslop pseudo-brand verdicts")
+	cmd.Flags().BoolVar(&deslopOn, "deslop", false, "annotate the product with deslop fake/junk-brand verdicts")
 
 	return cmd
 }

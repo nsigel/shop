@@ -79,7 +79,7 @@ func (c *CLI) newSearchCmd() *cobra.Command {
 	f.Float64Var(&minRating, "min-rating", 0, "minimum average rating")
 	f.StringVar(&category, "category", "", "category filter (provider-specific)")
 	f.StringArrayVar(&filters, "filter", nil, "arbitrary filter key=value (repeatable)")
-	f.BoolVar(&deslopOn, "deslop", false, "filter pseudo-brand junk using deslop verdicts from full product details")
+	f.BoolVar(&deslopOn, "deslop", false, "filter out fake/junk-brand listings using deslop verdicts from full product details")
 
 	return cmd
 }

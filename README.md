@@ -201,7 +201,7 @@ shop search "socket set" --deslop
 - `--min-rating` — Minimum average rating (e.g. `4.0`)
 - `--category` — Category filter (provider-specific)
 - `--filter` — Arbitrary `key=value` filter (repeatable)
-- `--deslop` — Fetch full product details and filter pseudo-brand junk before returning results
+- `--deslop` — Fetch full product details and filter out fake/junk-brand listings before returning results
 
 </details>
 
